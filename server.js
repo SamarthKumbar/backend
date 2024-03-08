@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT|| 5000;
 connectDb();
 app.use(express.json());
-app.use('/contact' , require("./routes/contactroutes.js"));
+app.use('/sam' , require("./routes/contactroutes.js"));
 app.use('/users', require("./routes/userroutes.js"));
 app.use(errorhandler);
 
