@@ -10,7 +10,7 @@ const validateToken = require("../middleware/validate");
 router.use(validateToken);
 router.route("/" ).get(getcontact);
 
-router.route("/" ).post(postcontact);
+router.route("/new" ).post(postcontact);
 
 router.route("/:id" ).put(updtaecontactid);
 
